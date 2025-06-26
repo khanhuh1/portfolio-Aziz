@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziz Portfolio</title>
+   <link rel="icon" href="assests/img/favicon.svg">
+   <style>
+    /* basic reset */
+* {
+margin: 0;
+padding: 5;
+box-sizing: border-box;
+}
+/* Body styling */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    color: rgb(56, 48, 48);
+}
+/* header and navigation */
+header {
+    background-color: #c5c5c5;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.logo img{
+    width: 100px;
+    height: 45px;
+    /* border-radius: 50%;-circle banauni */
+}
+.nav-links {
+    color: hsl(256, 100%, 72%);
+    text-decoration: none;
+    transition: color 0.3%;
+
+}
+.nav-links a:hover{
+    color: blueviolet;
+    transition: 0.6% case-in-out;
+}
+
+/* main content  */
+main {
+    margin-top: 80px;
+}
+/* section style  */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+h2 {
+    font-size: 2rem;
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* hero section */
+.hero {
+    background: linear-gradient(135deg, #299682, #1f4062);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    margin-top: -50px;
+    padding-top: 10rem;
+}
+.hero h1{
+    color: white;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+
+
+}
+.btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transform: background-color 0.3%;
+
+}
+  /* About section  */
+  .about {
+    background-color: aliceblue;
+
+  }
+
+ .about-content {
+
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+ }
+ .about-text {
+    flex: 2;
+ }
+ .about-image img{
+    flex: 1;
+    text-align: left;
+    width: 350px;
+    height: 300px;
+    border-radius: 60%;
+ }
+.profile-pic {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background-color: #3498db;
+display: flex;
+align-items: center;
+margin: 0 auto;
+font-size: 4rem;
+color: white;
+}
+/* skills section  */
+/*  Skills section */
+.skills-grid {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat (auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1rem;
+margin-top: centre;
+justify-items:center;
+}
+.skills-card {
+    background-color: rgb(186, 175, 212);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba 0, 0, 0, 0.1 ; 
+    text-align: center;
+    min-height: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.skills-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+
+}
+.skill-list{
+    list-style: none;
+}
+.skill-list li {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+   </style>
+   
+
+</head>
+<body>
+    <!-- header and navigation section -->
+     
+     <header>
+        <marquee class="marquee"  direction="left" scrollamount="10">Welcome To my Portfolio.
+
+        </marquee>
+        <nav>
+            <div class="logo"><img src="assests/img/logo.png" alt="logo"></div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                
+                </ul>
+
+            
+        </nav>
+        
+     </header>
+     <main>
+        <!-- hero section -->
+         <section id="home" class="hero">
+            <h1>Mahamad Aziz Miya</h1>
+            <p>Weeb - anime and manhwa fan </p>
+            <a href="#about" class="btn">Learn More About me</a>
+         </section>
+         <!-- about section  -->
+          <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello I'm Mahamad Aziz Miya, a boy who loves to watch animes and read manhwas . I have watched the big 3 animes which are: Onepiece,Naruto and Bleach. I also recommend you to watch these animes.
+
+                    </p>
+                    <p>I started watching Onepiece 3-4 months ago and i can't help but watch it till i don't finish it.Currently I am at Episode 711.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text"></div>
+                    <div class="about-image">
+                        <img src="assests/img/anw-min.webp" alt=""/>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cv">
+
+                <h3>Curriculum Vitae</h3>
+                <p>Download My Cv to learn about my education, experience, and skills.</p>
+                <a href="" class="btn" download>Download</a>
+            </div>
+          </section>
+          <!-- skills section  -->
+          
+           <!-- skills section -->
+         <section  id="skills">
+            <h2>my skills</h2>
+            <div class ="skills-grid">
+                <div class="skills-card">
+                <h3>programming language</h3>
+                <ul  class="skill-list">
+                    <li>html & css</li>
+                    <li>JavaScript</li>
+                    <li>python</li>
+                    <li>java</li>
+                </ul>
+            </div>
+
+                <div class="skills-card">
+                <h3>web technologies</h3>
+                <ul  class="skill-list">
+                    <li>responsive desgin</li>
+                    <li>Bootstrap</li>
+                    <li>react(learning) </li>
+                    <li>node.js  (basic) </li>
+                </ul>
+            </div>
+            <div  class="skills-card">
+                <h3>tools  & others</h3>
+                <ul  class="skill-list">
+                    <li>git & GitHub\</li>
+                    <li>VS  code</li>
+                    <li>photoshop </li>
+                    <li>microsoft  office</li>
+                </ul>
+            </div>
+            </div>
+         </section>
+
+<!-- Contact section  -->
+ <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>
+        I'd love to hear from you! Feel free to reach out for collaboration or inquiry.
+    </p>
+    <div class="contact-info">
+  <div class="contact-item">
+    <a href="https://web.facebook.com/itx.xenox" target="_blank">
+        <div class="contact-icon">
+            <img src="assests/img/facebook.svg" alt="Facebook image" height="30px" width="30px">
+        </div>
+    </a>
+  </div>
+  <h3>
+    Facebook
+  </h3><p>Mohammad Aziz</p>
+    </div>
+    
+  
+ </section>
+
+    
+</body>
+</html>
